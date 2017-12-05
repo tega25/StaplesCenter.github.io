@@ -14,7 +14,7 @@ function ajax(url, handler) {
                 handler(resp);
                 console.log(handler);
             } else {
-                alert('Please be sure to enter the exact name of the city.');
+                alert('I do not know why but I was only able to get the weather to show when I disable the security of the webpage');
                 handler('Ajax error, status: ' + this.status);           
             }       
         }    
