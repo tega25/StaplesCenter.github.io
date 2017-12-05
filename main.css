@@ -1,0 +1,35 @@
+#one {
+    position: relative;
+    bottom:35px;
+    }#LakersHistoryHeader {
+    text-align: center;
+    color:black;
+}
+
+nav a {
+    display: inline;
+    position: relative;
+    left:950px;
+    color:purple;
+}
+
+#logo {
+    position: relative;
+    right: 350px;
+    
+}
+
+li {
+    font-size: small;
+    margin:10px;
+}
+
+
+.jumbotron {
+    height: 600px;
+    background-image: url("http://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2016%2F0322%2Fr66147_1296x729_16%2D9.jpg");
+    background-size: cover;
+    max-width: 100%;
+
+}
+

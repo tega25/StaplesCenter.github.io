@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html>
+
+   <head>
+   			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    		<script src="index.js"></script>
+            <script src="parse-response.js"></script>
+    		<link rel="stylesheet"    type="text/css"    href="main.css" />
+     		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+     		<title> 2017 Lakers  </title>   
+	</head>
+	<body>	
+
+	<header class = "container" > 
+		<div class = "row" >
+			  <nav> 
+                  <a class="col-sm-1"  href="https://tega25.github.io/Record.github.io/" id = "PlayersButton"> Record </a> 
+                  <a class="col-sm-1" href="https://tega25.github.io/LakersRoster.github.io/" id = "StatsButton"> Roster </a>
+                  <a class="col-sm-1" href="https://tega25.github.io/About.github.io/" id = "AboutButton"> About </a>
+              	  <img id = "logo" src= "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/1000px-Los_Angeles_Lakers_logo.svg.png" 
+                            width="50" length="50"    />
+                  <ul style="list-style: none;" id = 'list'>
+                    <li id = 'one'> </li>
+                  </ul>
+                        
+              </nav>
+			
+		</div>
+	   
+	</header>
+	
+	<section class = "jumbotron"> 
+        
+        
+	</section>
+	
+	<section class ="StaplesCenter">
+        <section class = "container">
+        <div class = "col-sm-6">
+            <h3> Staples Center</h3>
+                <p class = "col-sm-12" >
+                    This arena is home to many sports teams that reside here in Los Angeles but the 
+                    Staples Center is mostly associated with the Lakers. The atmosphere for a Lakers game
+                    is unmatched by any other sports team that plays in the Staples Center. The arena is
+                    barely more than a decade old, but it already has hosted two NBA All-Star Games and seven
+                    NBA Finals series.
+                </p>
+        </div> 
+        
+        <div class = "col-sm-6">
+            <h3> History</h3>
+                <p class = "col-sm-12" >
+                    The Staples Center opened on October 17, 1999 with a Bruce Springsteen & The E Street Band concert as its inaugural event. The downtown location is very strong, 
+                    and there's a ton of restaurants and bars nearby so their is plenty to do after the game.
+                    There are also a couple of higher-end hotels just a couple of blocks away. 
+                    The arena also is accessible by Los Angeles' light-rail system.
+                </p>
+        </div> 
+
+        <div class = "col-sm-6">
+            <h3> What Sets it apart</h3>
+                <p class = "col-sm-12" >
+                    The most notable feature about Staples Center is the life size
+                    Statues outside the arena that honor some of the best who have performed in the Staples Center.  
+                    The Panasonic live 4HD scoreboard is among the league's best, it even has an underneath 
+                    section that makes it easy for fans sitting courtside to see spectacular replays.
+                    Of course, don't forget the people-watching. Hollywood stars famous people around the world 
+                    continously attend Lakers games. You never know who could be seated next you.
+                    </p>
+        </div> 
+        
+
+        
+        </section>
+        </section>
+        
+    </section>
+    
+                    
+                    
+
+
+		</body>
+
+
+<script>
+/* global ajax */
+/* global parseResponse */
+var city = "Los Angeles";
+var apiKey = "652d1cbdac7381c530861e9ccda5fa21";
+var url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey; 
+
+            ajax(url, function(resp) {     
+            resp = parseResponse(resp); 
+            document.getElementById('one').innerHTML = resp;
+        }); 
+
+		</script>
+
+
+</html>
